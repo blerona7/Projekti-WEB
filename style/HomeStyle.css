@@ -83,7 +83,7 @@ position: absolute;
 .LeftBox a {
     text-decoration: none;
     color: black;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: darkgrey;
 }
@@ -103,7 +103,7 @@ position: absolute;
 }
 
 .MR {
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
 }
@@ -112,7 +112,7 @@ position: absolute;
     text-decoration: none;
     color: black;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .RightBox a:hover {
@@ -157,7 +157,7 @@ display: flex;
 
 .specialDiv p {
     text-align: center;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
 .RowOfNews {
@@ -220,7 +220,7 @@ display: flex;
     text-decoration: none;
     color: black;
     font-size: 15px;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -233,7 +233,7 @@ display: flex;
     font-size: 19px;
     text-align: start;
     color: #971616;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .BoxHoldr1 div {
@@ -328,7 +328,7 @@ display: flex;
 
     .specialDiv p {
         text-align: center;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-size: 25px;
     }
 
@@ -370,7 +370,7 @@ display: flex;
         text-decoration: none;
         color: black;
         font-size: 25px;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
@@ -382,7 +382,7 @@ display: flex;
         text-decoration: none;
         font-size: 25px;
         text-align: center;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
     }
 
     .BoxHoldr1 div {
@@ -485,7 +485,7 @@ display: flex;
 
     .specialDiv p {
         text-align: center;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-size: 25px;
     }
 
@@ -572,7 +572,7 @@ display: flex;
         text-decoration: none;
         color: black;
         font-size: 25px;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
@@ -584,7 +584,7 @@ display: flex;
         text-decoration: none;
         font-size: 25px;
         text-align: center;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
     }
 
     .BoxHoldr1 div {
@@ -780,7 +780,7 @@ display: flex;
         text-decoration: none;
         color: black;
         font-size: 25px;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
@@ -792,7 +792,7 @@ display: flex;
         text-decoration: none;
         font-size: 25px;
         text-align: center;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
     }
 
     .BoxHoldr1 div {
@@ -819,7 +819,7 @@ display: flex;
 }
 
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin: 0
 }
 

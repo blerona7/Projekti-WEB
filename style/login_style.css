@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.body {
+    /* background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(135deg, #3a3d40, #181818);
+}
+
+.login-page {
+    /* width: 360px; */
+    padding: 8% 0 0;
+    margin: auto;
+
+}
+
+.login-form a{
+    text-decoration: none;
+}
+.form h1{
+    color: #ffd300;
+}
+
+.form {
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+    background: rgb(33, 31, 32);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.form input {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+
+}
+input:invalid {
+    border: 2px solid #ff3860;
+}
+
+.form button {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    outline: 0;
+    background: #ffd300;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    margin: 0px 0px 8px;
+    padding: 15px;
+    color:black;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+.form:hover {
+    box-shadow: 0 0 20px #ffd300, 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ffd300, #ff8a00);
+}
+.form button:hover,
+.form button:focus {
+    background: #4e5251;
+    box-shadow: 0 5px 10px #ffd300;
+    transform: translateY(-4px);
+    color: #ffd300;
+}
+
+.form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.form .submitButton{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: .1em;
+        outline: 0;
+        background: #ffd300;
+        width: 100%;
+        border: 0;
+        border-radius: 30px;
+        margin: 0px 0px 8px;
+        padding: 15px;
+        color: black;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        transition: all 0.2s;
+}
+
+
+.form .submitButton:hover,
+.form .submitButton:focus {
+    background: #4e5251;
+    box-shadow: 0 5px 10px #ffd300;
+    transform: translateY(-4px);
+    color: #ffd300;
+}
+.form .submitButton:active {
+    transform: translateY(2px);
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form .message {
+    margin: 6px 6px;
+    color: #808080;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.form .message a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.form .register-form {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+        color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
