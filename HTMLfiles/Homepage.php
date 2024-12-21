@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
+<?php
+include_once '../backend/Mapper/articleMapper.php';
+include_once '../backend/logic/articleLogic.php';
+
+$mapper=new ArticleMapper();
+$articles=$mapper->getAllArticles();
+?>
+
 <head>
     <link rel="stylesheet" href="../style/HomeStyle.css">
     <link rel="stylesheet" href="../style/FooterStyle.css">
+    <link rel="stylesheet" href="../style/HomeStyle.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/HeaderStyle.css">
     <script type="text/javascript" src="../js/slider.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Homepage</title>
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <img src="https://www.pngkey.com/png/full/208-2088636_news-amp-events-report-icon-black-png-newspaper.png" style="width: 57px;
-            margin-top:5px; height: 36px;
-            "  />
-    
-            <div class="header-right">
-                    <a href="#">Dashboard</a>
-                <a class="active" href="Homepage.html">Home</a>
-                <a href="#">About Us</a>
-                    <a href="#">Contact Form</a>
-                    <a href="#">Log out</a>
-            </div>
-        </div>
-    </header>
+
+    <body>
+        <?php
+        include('../Re-Usable/header.php');
+        ?>
         <main>
             <div class="social-icons">
                 <ul>
@@ -53,6 +51,7 @@
                     <div class="secondDiv">
                         <h3>PEPFAR gets a yearlong reauthorization, but questions and uncertainties still remain. Plus, how “megatrends” factor into your development...
                         </h3>
+
                             <h5>L'You won't beat government. If there's a will to make something happen at a higher level, that's probably what's going to happen,' says Ken... <br> 
                            Chemistry researchers found as much as 90% of tattoo inks in the U.S. might be mislabled, with some containing substances that could cause...
                        Aaron Taylor-Johnson is the latest actor reportedly offered a license to kill and succeed Daniel Craig as the new James Bond.  </h5>
@@ -69,14 +68,19 @@
                     </button>
 
                     <div class="current-news-head">
-                        
+                        <?php
+                        $article = $mapper->showTop4MostRead();
+                        foreach ($article as $articles) {
+                        ?>
                             <h3>
-                                <br>
+                                <?php echo $articles['headline']; ?><br>
                             </h3>
                             <span>
-                               <br>
+                                <?php echo $articles['journalists']; ?><br>
                             </span>
-                       
+                        <?php
+                        }
+                        ?>
 
                         <div class="banner-sub-content">
                             <div class="hot-topic">
@@ -103,8 +107,10 @@
                                     <a href="Readmore.php">Lexo</a>
                                 </div>
                             </div>
+
                             <div class="hot-topic">
                                 <img src="https://yt3.googleusercontent.com/ytc/AMLnZu9X0I_rv6PlC0FPlF3893vaH-QPFiERqfBGQu68uA=s900-c-k-c0x00ffffff-no-rj" alt="">
+
                                 <div class="hot-topic-content">
                                     <h2>Kur do te filloje BBV4 ne Shqiperi</h2>
                                     <h3>Big Brother VIP</h3>
@@ -113,6 +119,7 @@
                                     <a href="#">Lexo</a>
                                 </div>
                             </div>
+
                             <div class="hot-topic">
                                 <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_lg_2x/primary/yk2f8tqpjxzdnw3e5b1n" alt="">
 
@@ -164,10 +171,12 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="BoxHoldr1">
                     <img src="https://img.freepik.com/free-vector/medical-science-healthcare-blue-banner_1017-23667.jpg?w=2000" style="width: 100%;
     height: 250px;" />
                     <h3>Shendetesi</h3>
+
                     <div>
                         <a href="#">
                             Në të kaluarën, mundësitë e Kosovës për të zhvilluar një sistem modern të kujdesit shëndetësor
@@ -179,75 +188,45 @@
                 </div>
 
             </div>
+
 <div class="slideshow-container" style="margin-top: 10%; width:50%">
+
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="https://cdnimpuls.com/alfapress.al/media3/-640-0-unnamed-2-828.jpg" style="width:100%">
   <div class="text">Lajmet me te reja</div>
 </div>
+
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="https://graziamagazine.com/wp-content/uploads/2022/04/GettyImages-1389382981.jpg?resize=1024%2C693" style="width:100%">
   <div class="text">Hailey Bieber/ Justin Bieber</div>
 </div>
+
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/11/896/500/Selena-Gomez-Hailey-Bieber.jpg?ve=1&tl=1" style="width:100%">
   <div class="text">Selena Gomes && Hailey Bieber</div>
 </div>
+
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
+
 </div>
 <br>
+
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-        </main>
-    </body>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(33, 31, 32)" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,122.7C384,85,480,43,576,58.7C672,75,768,149,864,160C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
-    <footer class="footer">
-        <div class="l-footer">
-        <h1>
-        <img src="https://i.postimg.cc/y62wcLBq/logo.png" alt=""></h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
-        </div>
-        <ul class="r-footer">
-        <li>
-          <h2>
-        Social</h2>
-        <ul class="box">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Reddit</a></li>
-        </ul>
-        </li>
-        <li class="features">
-          <h2>
-        Information</h2>
-        <ul class="box h-box">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Certifications</a></li>
-        <li><a href="#">Customer Service</a></li>
-        </ul>
-        </li>
-        <li>
-          <h2>
-        Legal</h2>
-        <ul class="box">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Contract</a></li>
-        </ul>
-        </li>
-        </ul>
-        <div class="b-footer">
-        <p>
-        All rights reserved by ©SunnyNews 2024 </p>
-        </div>
-        </footer>
+
+        </main>
+
+        <?php
+        include('../Re-Usable/footer.php');
+        ?>
+    </body>
+
 </html>
