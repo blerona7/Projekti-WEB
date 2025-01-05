@@ -170,7 +170,7 @@ session_start()
             </li>
         </ul>
         <div class="b-footer">
-            <p>All rights reserved by ©SunnyHillNews 2024 </p>
+            <p>All rights reserved by ©SunnyHillNews 2025 </p>
         </div>
     </footer>
     </body>

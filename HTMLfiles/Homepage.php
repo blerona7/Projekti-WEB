@@ -103,7 +103,7 @@ $articles=$mapper->getAllArticles();
                                     <h2>Kush do te perfaqesoje Shqiperine ne Eurovision 2024? </h2>
 
                                     <h3>Eurovision 2024</h3>
-                                    <p>Kush eshte Albina Kelmendi, qe rrembeu vendin e dyte dhe te pare ne Eurovision 2023.</p>
+                                    <p>Kush eshte Elvana Gjata, qe rrembeu vendin e dyte ne Eurovision 2024.</p>
                                     <a href="Readmore.php">Lexo</a>
                                 </div>
                             </div>
